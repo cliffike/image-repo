@@ -1,0 +1,35 @@
+<div class="shadow p-3 mb-5 bg-white rounded" >
+	  
+	<p id="notice"><%= notice %></p>
+
+	<p class="text-center">
+		<strong>Title:</strong>
+		<%= @post.title %>
+	</p>
+
+
+
+	<div class="container" style="width: 100%; height: auto; margin: 50px ">
+
+
+	  <div class="row">
+		<div class="col-sm">
+
+			<% (0... @post.images.count).each do |image|%>
+	          <%= image_tag @post.images[image], style: 'width:300px; height:300px'%> 
+	        <%end%>
+
+	    </div>
+	  </div>
+	</div>
+
+
+	<p class="text-center">
+	  <strong>Body:</strong>
+	  <%= @post.body %>
+	</p>
+    
+	<%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-outline-primary' %>|
+	<%= link_to 'Back', posts_path , class: 'btn btn-outline-primary'%>
+
+</div>
