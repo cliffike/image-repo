@@ -1,6 +1,6 @@
 # MY IMAGE REPO
 
-	myImageRepo is a simple ruby on rauls web app that allows anybody to:
+	myImageRepo is a simple ruby on rails web app that allows anybody to:
 upload image
 edit image
 delete image 
